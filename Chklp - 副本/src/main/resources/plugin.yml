@@ -1,0 +1,11 @@
+name: Chklp
+version: 1.0
+main: com.example.chklp.Chklp
+api-version: 1.20
+description: 尸潮插件
+author: CHklpy
+commands:
+  stopzombiewave:
+    description: 终止指定玩家的尸潮任务
+    usage: /stopzombiewave <玩家名>
+    permission: chklp.stopzombiewave

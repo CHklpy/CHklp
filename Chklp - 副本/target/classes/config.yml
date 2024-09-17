@@ -1,0 +1,74 @@
+# 此为尸潮一些基本配置，感谢您的下载！我的qq:1136007356
+# 生成半径
+spawnRadius: 15
+
+# 生成数量
+spawnAmount: 15
+
+# 延迟时间（秒）
+delaySeconds: 5
+
+# 执行间隔（秒）
+intervalSeconds: 60
+
+# 生成僵尸的名字
+zombieName: "变异僵尸"
+
+# 僵尸是否可以破坏方块和门
+canBreakBlocks: true
+
+# 僵尸属性配置
+zombieAttributes:
+  health: 50
+  attackDamage: 10
+  armor: 5
+  speed: 0.3
+
+# 僵尸病毒配置
+zombieVirus:
+  poisonDuration: 60  # 中毒效果持续时间（秒）
+  poisonLevel: 1      # 中毒效果等级
+  initialMaxHealth: 20  # 初始生命上限
+  healthDecreaseAmount: 1  # 每次扣除的生命上限
+  healthDecreaseInterval: 5  # 扣除生命上限的间隔时间（秒）
+  infectionProbability: 0.2  # 感染僵尸病毒的概率
+
+# 去除僵尸病毒的物品配置
+cureItem:
+  material: "GOLDEN_APPLE"  # 默认去除僵尸病毒的物品为金苹果
+
+# 成就配置
+achievements:
+  surviveTheCrisis:
+    name: "度过难关"
+    color: "DARK_PURPLE"
+  doomedToDie:
+    name: "难逃一死"
+    color: "DARK_PURPLE"
+
+# 尸王配置
+zombieKing:
+  name: "尸王"
+  health: 400
+  attackDamage: 60
+  armor: 20
+  speed: 0.35
+  dropItem:
+    material: "DIAMOND_SWORD"
+    name: "尸剑"
+    enchantments:
+      - "DAMAGE_ALL:100"
+      - "KNOCKBACK:10"
+  witherEffectDuration: 10  # 凋零效果持续时间（秒）
+  witherEffectLevel: 1       # 凋零效果等级
+  infectionProbability: 0.5  # 感染僵尸病毒的概率
+
+# 虚弱效果相关配置
+weaknessEffect:
+  duration: 60  # 虚弱效果持续时间（秒）
+  level: 1  # 虚弱效果等级
+
+# 感染传播相关配置
+infectionSpread:
+  enabled: true  # 是否启用感染传播
+  spreadProbability: 0.5  # 感染传播概率
